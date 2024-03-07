@@ -14,7 +14,7 @@ def dynamical_system(env, state, A):
 # Define the Lyapunov function
 def lyapunov_function(x):
     # Example Lyapunov function: V(x) = |x|
-    return abs(x)
+    return (x*x)
 
 # Check the stability using the Lyapunov function
 def check_stability(env, state):
